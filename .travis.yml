@@ -1,3 +1,15 @@
+matrix:
+    include:
+        - os: linux
+          dist: trusty
+          addons:
+            mariadb: '10.1'
+
+        - os: linux
+          dist: xenial
+          addons:
+            mariadb: '10.1'
+
 services:
   - mysql
 
@@ -5,5 +17,3 @@ script:
   - mysql -e 'SELECT version();'
   - mysql -e "SHOW VARIABLES LIKE '%query_cache%';"
 
-addons:
-  mariadb: '10.1'
