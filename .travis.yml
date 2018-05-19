@@ -2,6 +2,12 @@ matrix:
     include:
         - os: linux
           dist: trusty
+          env: 'NAME=Ubuntu Trusty, MariaDB 10.0'
+          addons:
+            mariadb: '10.0'
+
+        - os: linux
+          dist: trusty
           env: 'NAME=Ubuntu Trusty, MariaDB 10.1'
           addons:
             mariadb: '10.1'
@@ -17,6 +23,12 @@ matrix:
           env: 'NAME=Ubuntu Trusty, MariaDB 10.3'
           addons:
             mariadb: '10.3'
+
+        - os: linux
+          dist: xenial
+          env: 'NAME=Xenial Trusty, MariaDB 10.0'
+          addons:
+            mariadb: '10.0'
 
         - os: linux
           dist: xenial
