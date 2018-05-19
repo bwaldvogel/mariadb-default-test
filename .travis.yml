@@ -2,13 +2,39 @@ matrix:
     include:
         - os: linux
           dist: trusty
+          env: 'NAME=Ubuntu Trusty, MariaDB 10.1'
+          addons:
+            mariadb: '10.1'
+
+        - os: linux
+          dist: trusty
+          env: 'NAME=Ubuntu Trusty, MariaDB 10.2'
+          addons:
+            mariadb: '10.2'
+
+        - os: linux
+          dist: trusty
+          env: 'NAME=Ubuntu Trusty, MariaDB 10.3'
+          addons:
+            mariadb: '10.3'
+
+        - os: linux
+          dist: xenial
+          env: 'NAME=Xenial Trusty, MariaDB 10.1'
           addons:
             mariadb: '10.1'
 
         - os: linux
           dist: xenial
+          env: 'NAME=Xenial Trusty, MariaDB 10.2'
           addons:
-            mariadb: '10.1'
+            mariadb: '10.2'
+
+        - os: linux
+          dist: xenial
+          env: 'NAME=Xenial Trusty, MariaDB 10.3'
+          addons:
+            mariadb: '10.2'
 
 services:
   - mysql
