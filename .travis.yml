@@ -26,25 +26,25 @@ matrix:
 
         - os: linux
           dist: xenial
-          env: 'NAME=Xenial Trusty, MariaDB 10.0'
+          env: 'NAME=Ubuntu Xenial, MariaDB 10.0'
           addons:
             mariadb: '10.0'
 
         - os: linux
           dist: xenial
-          env: 'NAME=Xenial Trusty, MariaDB 10.1'
+          env: 'NAME=Ubuntu Xenial, MariaDB 10.1'
           addons:
             mariadb: '10.1'
 
         - os: linux
           dist: xenial
-          env: 'NAME=Xenial Trusty, MariaDB 10.2'
+          env: 'NAME=Ubuntu Xenial, MariaDB 10.2'
           addons:
             mariadb: '10.2'
 
         - os: linux
           dist: xenial
-          env: 'NAME=Xenial Trusty, MariaDB 10.3'
+          env: 'NAME=Ubuntu Xenial, MariaDB 10.3'
           addons:
             mariadb: '10.2'
 
