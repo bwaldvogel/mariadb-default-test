@@ -54,4 +54,4 @@ services:
 script:
   - mysql -e 'SELECT version();'
   - mysql -e "SHOW VARIABLES LIKE '%query_cache%';"
-  - cat /etc/mysql/my.cnf
+  - grep -i cache /etc/mysql/my.cnf
