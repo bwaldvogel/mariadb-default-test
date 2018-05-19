@@ -1,0 +1,8 @@
+services:
+  - mysql
+
+script:
+  - mysql -e 'SELECT version();'
+
+addons:
+  mariadb: '10.1'
